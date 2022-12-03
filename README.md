@@ -1,0 +1,6 @@
+All rows in the “Banking Marketing Targets” dataset total 45,211 rows. With the variable "y" as a target as well as business metrics from campaigns conducted through phone calls. Overall, there are no inappropriate column names and data types. However, what needs to be considered is that during data pre-processing, it is necessary to feature encoding on several features so that the ML model can be efficient.
+
+Target y is encoded with label encoding method.
+Marital, education, default, housing, loan, contact and outcome features are also encoded with the cat.code method (label encoding).
+The job and month features are encoded with the One-hots encoding method because the values ​​for these two features are nominal and numerous.
+In the histogram plot, it is more clearly visible through the bin for each feature that is not normally distributed and tends to be right-skewed (right long tailed). The age, duration, campaign and days features need to be log transformation to get closer to the normal distribution. There is no correlation between non-target features. There is a moderate positive correlation between the "duration" feature with "y" as the target. There are no redundant features.
